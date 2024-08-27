@@ -1,121 +1,92 @@
-# Backend Engineer Test
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+</p>
 
-Create an API that serves as an cloud backup system
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## Simple Mode
-- Users can create an account with:
-    - email address
-    - password
-    - full name
-- Users can upload files up to 200mb
-- Users can download uploaded files
-- Users can create folders to hold files
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Hard Mode
-- An admin user type for managing the content uploaded
-- Admins can mark pictures and videos as unsafe
-- Unsafe files automatically get deleted
-- Users can stream videos and audio
+## Description
 
-## Ultra Mode
-- Compression
-- File History
+[Nest](https://github.com/nestjs/nest) framework TypeScript with [Keyclock](https://www.keycloak.org/) as Identity Provider.
 
-## Bonus
-- Revokable session management# Backend Engineer Test
-
-Create an API that serves as an cloud backup system
-
-## Simple Mode
-- Users can create an account with:
-    - email address
-    - password
-    - full name
-- Users can upload files up to 200mb
-- Users can download uploaded files
-- Users can create folders to hold files
-
-## Hard Mode
-- An admin user type for managing the content uploaded
-- Admins can mark pictures and videos as unsafe
-- Unsafe files automatically get deleted
-- Users can stream videos and audio
-
-## Ultra Mode
-- Compression
-- File History
-
-## Bonus
-- Revokable session management
-- Multiple admin reviews before file is deleted
-
-## How to pick what to work on
-At minimum you must implement everything in simple mode. You're free to pick and choose what else you
-implement along side it. The harder the task, the better your chances. Though make sure to finish the **Simple Mode**
-first.
-
-## Tools/Stack
-
-- NodeJs (TypeScript & Express) or Golang
-- Postgres for pure data
-- Redis
-- Docker
-- Postman
-- S3 or any other shared cloud storage provider
-
-## Tests
-
-Unit tests are a must, submissions without tests will be ignored.
+## Setup Keycloak
+```bash
+$ docker-compose up
+```
+Access the instance, configure new realm with users and roles (To be detailed)
 
 
-## Time Duration
+## Project setup
 
-7 days
+```bash
+$ npm install
+```
 
-## Submission
+## Compile and run the project
 
-1. Your API endpoints should be well documented in POSTMAN.
-2. Code should be hosted on a git repository, Github preferably.
-3. The API should be hosted on a live server (e.g. https://heroku.com)
-4. Your app should be `containerized` using `docker`.
-5. Share with us through email the:
-    - Repository
-    - Hosted API URL
-    - Postman Collection
-    - A list of tasks you did beyond **Simple Mode**
-- Multiple admin reviews before file is deleted
+```bash
+# development
+$ npm run start
 
-## How to pick what to work on
-At minimum you must implement everything in simple mode. You're free to pick and choose what else you
-implement along side it. The harder the task, the better your chances. Though make sure to finish the **Simple Mode**
-first.
+# watch mode
+$ npm run start:dev
 
-## Tools/Stack
+# production mode
+$ npm run start:prod
+```
 
-- NodeJs (TypeScript & Express) or Golang
-- Postgres for pure data
-- Redis
-- Docker
-- Postman
-- S3 or any other shared cloud storage provider
+## Run tests
 
-## Tests
+```bash
+# unit tests
+$ npm run test
 
-Unit tests are a must, submissions without tests will be ignored.
+# e2e tests
+$ npm run test:e2e
 
+# test coverage
+$ npm run test:cov
+```
 
-## Time Duration
+## Resources
 
-7 days
+Check out a few resources that may come in handy when working with NestJS:
 
-## Submission
+- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
+- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
+- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
+- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
+- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
+- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
+- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
 
-1. Your API endpoints should be well documented in POSTMAN.
-2. Code should be hosted on a git repository, Github preferably.
-3. The API should be hosted on a live server (e.g. https://heroku.com)
-4. Your app should be `containerized` using `docker`.
-5. Share with us through email the:
-    - Repository
-    - Hosted API URL
-    - Postman Collection
-    - A list of tasks you did beyond **Simple Mode**
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
